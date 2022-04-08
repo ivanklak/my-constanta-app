@@ -1,10 +1,12 @@
-import './App.css'
+import Routes from "./routes";
+import Navbar from "./components/Navbar";
 
 const App = () => {
 
     return (
         <div>
-            App
+            <Navbar/>
+            <Routes/>
         </div>
     )
 }
