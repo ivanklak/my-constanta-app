@@ -20,7 +20,7 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-.resetButton button {
+.timerButtonsField button {
     background-color: #000000;;
     padding: 5px 10px;
     border: 1px solid #00ff0b;
@@ -30,7 +30,7 @@
     color: #00ff0b;
 }
 
-.resetButton button:hover {
+.timerButtonsField button:hover {
     background-color: #00ff0b;
     color: black;
 }
@@ -38,4 +38,11 @@
 .error {
     margin: 20px 0;
     color: #ff2f00;
+}
+
+.notice {
+    font-family: 'Roboto Mono', monospace;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #00ff0b;
 }
