@@ -1,3 +1,33 @@
 .info {
     padding: 20px;
 }
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoTitle {
+    color: #00ff0b;
+    border-bottom: 1px solid  #00ff0b;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.infoText {
+    font-family: 'Roboto Mono', monospace;
+    color: #00ff0b;
+}
+
+.infoBlock {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px dashed #00ff0b;
+}
+
+.blockTitle {
+    border: 1px solid #00ff0b;
+}
+
+.blockTitle h3 {
+    margin: 5px;
+}

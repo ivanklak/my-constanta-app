@@ -1,4 +1,5 @@
 import {createStore, combineReducers} from 'redux';
+
 import {mapReducer} from "../Maps/reducers";
 import {timeReducer} from "../Timer/reducers";
 
