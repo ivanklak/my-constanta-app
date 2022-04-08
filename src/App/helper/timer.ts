@@ -9,6 +9,12 @@ class Timer {
         }, 1000);
     }
 
+    resetTimer() {
+        const startTime = new Date().getTime();
+        this.clearCurrentInterval();
+        this.startTimer(startTime);
+    }
+
     clearCurrentInterval() {
         clearInterval(this.intervalId);
     }
