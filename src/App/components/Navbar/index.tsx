@@ -1,4 +1,4 @@
-import React from "react";
+import React, {FC} from "react";
 import {Link} from 'react-router-dom';
 
 import styles from './styles.module.css';
@@ -9,7 +9,7 @@ const menuItems = [
     {key: '/timer', label: 'Timer', path: '/timer'},
 ];
 
-const Navbar = () => {
+const Navbar: FC = () => {
 
     return (
         <nav className={styles.navbarContainer}>
