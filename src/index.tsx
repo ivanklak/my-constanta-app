@@ -9,7 +9,7 @@ import store from "./App/redux-store";
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename='/my-constanta-app'>
         <Provider store={store}>
             <App/>
         </Provider>
