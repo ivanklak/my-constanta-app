@@ -1,3 +1,41 @@
 .timerContainer {
     padding: 20px;
 }
+
+.timerContainer {
+    padding: 20px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timerContainer span {
+    font-size: 48px;
+    padding: 10px;
+    color: #00ff0b;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.resetButton button {
+    background-color: #000000;;
+    padding: 5px 10px;
+    border: 1px solid #00ff0b;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00ff0b;
+}
+
+.resetButton button:hover {
+    background-color: #00ff0b;
+    color: black;
+}
+
+.error {
+    margin: 20px 0;
+    color: #ff2f00;
+}
