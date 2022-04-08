@@ -1,0 +1,11 @@
+.loader {
+    color: #00ff0b;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

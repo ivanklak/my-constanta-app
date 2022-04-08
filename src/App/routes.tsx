@@ -1,15 +1,19 @@
-import React from "react";
+import React, {FC, Suspense} from "react";
 import {Route, Switch} from 'react-router-dom';
 
-import Info from "../Info";
-import Maps from "../Maps";
-import Time from "../Timer";
+import Loader from "./components/Loader/Loader";
 
-const Routes = () => (
+const InfoComponent = React.lazy(() => import('../Info'));
+const MapsComponent = React.lazy(() => import('../Maps'));
+const TimeComponent = React.lazy(() => import('../Timer'));
+
+const Routes: FC = () => (
     <Switch>
-        <Route path='/' exact component={Info}/>
-        <Route path='/maps' exact component={Maps}/>
-        <Route path='/timer' exact component={Time}/>
+        <Suspense fallback={<Loader />}>
+            <Route path='/' exact component={InfoComponent} />
+            <Route path='/maps' component={MapsComponent} />
+            <Route path='/timer' component={TimeComponent} />
+        </Suspense>
     </Switch>
 )
 
