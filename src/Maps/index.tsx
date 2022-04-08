@@ -1,4 +1,5 @@
 import React, {FC} from "react";
+import {Map, Placemark, YMaps} from 'react-yandex-maps';
 import {useSelector} from "react-redux";
 import {getCoordinates} from "./selectors";
 
@@ -9,9 +10,20 @@ const Maps: FC = () => {
 
     return (
         <div className={styles.mapContainer}>
-            {coordinates}
+            <YMaps>
+                <Map width={"50vw"}
+                     height={"80vh"}
+                     defaultState={{center: coordinates, zoom: 10, behaviors: ['default', 'scrollZoom'],}}
+                >
+                    <Placemark
+                        defaultGeometry={coordinates}
+                        options={{
+                            preset: 'islands#pinkStretchyIcon',
+                        }}
+                    />
+                </Map>
+            </YMaps>
         </div>
-
     )
 }
 
