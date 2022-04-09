@@ -1,4 +1,4 @@
-import{j as a,a as e}from"./index.75aa1662.js";const s="_infoBlock_fpiha_1",r="_blockTitle_fpiha_7";var o={infoBlock:s,blockTitle:r};const c=({title:n,text:l})=>a("div",{className:o.infoBlock,children:[e("div",{className:o.blockTitle,children:e("h3",{children:n})}),e("p",{children:l})]}),i={aboutMe:`I have been engaged in programming for more than 2.5 years without days off. This is my great
+import{j as a,a as e}from"./index.a36f3f98.js";const s="_infoBlock_fpiha_1",r="_blockTitle_fpiha_7";var o={infoBlock:s,blockTitle:r};const c=({title:n,text:l})=>a("div",{className:o.infoBlock,children:[e("div",{className:o.blockTitle,children:e("h3",{children:n})}),e("p",{children:l})]}),i={aboutMe:`I have been engaged in programming for more than 2.5 years without days off. This is my great
                         passion. I am constantly learning, not afraid of any challenges and have experience working on
                         real projects. Absolute team player, who also can work independently thanks to working
                         remotely. I am an effective performer and I am able to analyze a large amount of information in
